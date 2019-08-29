@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     new WOW().init();
     GalleryFunction();
-    OwlCarouselFunction();
+    HeroSliderOwlCarouselFunction();
     SlickMobileMenuFunction();
 
 });
@@ -30,11 +30,11 @@ function GalleryFunction(){
 
 
 // Owl Carousel Function
-function OwlCarouselFunction(){
-    $('.owl-carousel').owlCarousel({
+function HeroSliderOwlCarouselFunction(){
+    $('#hero_slider').owlCarousel({
         loop:true,
-        margin:10,
-        nav:true,
+        margin:false,
+        nav:false,
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 5000,

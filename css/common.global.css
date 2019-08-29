@@ -43,11 +43,11 @@
   outline: none;
 }
 .owl-theme .owl-dots .owl-dot span {
-  background: #fff;
-  border: 2px solid red;
+  background: transparent;
+  border: 2px solid #2691E4;
   transition: all .2s ease;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-  background: red;
+  background: #2691E4;
   outline: none;
 }
