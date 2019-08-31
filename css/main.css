@@ -7,6 +7,9 @@
         - Navbar
         - Hero Slider
         - Qoute
+        - Services
+        - Features Services 
+        - Tracking
         - Footer
 	- Responsive Design 
 -------------------------------------------------------------------*/
@@ -25,7 +28,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    font-size: 14px;
+}
 
 
 /* Navbar 
@@ -103,4 +108,206 @@ section.qoute_area p {
     font-size: 22px;
     margin: 0;
     padding-top: 14px;
+}
+
+
+
+/* Services 
+/*================================================== */
+section.services_area {
+    padding: 80px 0;
+}
+.services_item {
+    margin-bottom: 30px;
+}
+.services_img {
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.services_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services_content h2 a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 9px;
+    letter-spacing: -0.2px;
+}
+.services_content h2 a:hover{
+    color: #2691E4;
+    text-decoration: none;
+}
+.services_content p {
+    font-size: 14px;
+    color: #777;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.services_content .btn {
+    font-weight: 600;
+    position: relative;
+    padding-left: 0;
+    color: #2691e4;
+    line-height: 24px;
+    padding: 0;
+}
+
+
+
+/* Features Services 
+/*================================================== */
+.section_header {
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+section.features_services_area {
+    background: #F0F0F0;
+    padding: 80px 0;
+}
+.section_header h2 {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 9px;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+}
+.section_header p {
+    font-size: 14px;
+    color: #777;
+    line-height: 25px;
+}
+.features_item {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}   
+.features_item a:hover{
+    text-decoration: none;
+}
+.fi_icon {
+    border: 1px solid #cccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 22px;
+    margin: auto;
+    margin-bottom: 15px;
+    transition: all .3s ease-in-out;
+}
+.features_item:hover .fi_icon {
+    background: #2691e4;
+    border-color: #2691E4;
+    color: #fff;
+}
+.features_item h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 9px;
+    letter-spacing: -0.2px;
+}
+.features_item p {
+    font-size: 14px;
+    color: #777;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Tracking 
+/*================================================== */
+section.tracking_area {
+    padding: 60px;
+    background: #1A1E20;
+}
+.tracking_inner input {
+    background: #21282B;
+    border-color: #21282B;
+    height: 50px;
+    transition: all .3s ease;
+}
+.tracking_inner .form-control:focus {
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+.tracking_inner .input-group-prepend span {
+    background: #D03232;
+    border-color: #D03232;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.tracking_inner {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+/* Partner 
+/*================================================== */
+.partner_item {height: 80px;background: #fff;}
+.partner_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+
+
+/* Footer 
+/*================================================== */
+.footer_area{
+    padding: 80px 0;
+}
+.footer_item.footer_logo img {
+    margin-bottom: 20px;
+}
+.footer_item.footer_logo p {
+    color: #777;
+}
+.footer_item h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 9px;
+    letter-spacing: -0.2px;
+}
+.footer_item ul {
+    margin-top: 23px;
+}
+.footer_item ul li a {
+    font-size: 14px;
+    color: #777;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    display: block;
+}
+.footer_item ul li:last-child a {
+    border: 0;
+}
+section.footer_bottom_area {
+    background: #F0F0F0;
+    text-align: center;
+}
+section.footer_bottom_area p {
+    margin: 0;
+    padding: 15px 0;
+    color: #777;
+    font-size: 14px;
+    letter-spacing: .3px;
 }
