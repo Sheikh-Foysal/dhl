@@ -51,3 +51,7 @@
   background: #2691E4;
   outline: none;
 }
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+}

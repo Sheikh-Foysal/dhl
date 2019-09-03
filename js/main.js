@@ -5,8 +5,10 @@
 $(document).ready(function(){
 
     new WOW().init();
+    FixedHeaderFunction();
     GalleryFunction();
     HeroSliderOwlCarouselFunction();
+    ScrollTopFunction();
     FeaturesSliderOwlCarouselFunction();
     PartnerSliderOwlCarouselFunction();
     SlickMobileMenuFunction();
@@ -14,6 +16,34 @@ $(document).ready(function(){
 });
 
 
+// Header Sticky Function
+function FixedHeaderFunction(){
+    $(window).scroll(function() {  
+        var scroll = $(window).scrollTop();
+        if (scroll >= 30) {
+            $(".header_nav").addClass("fixedheader shadow");
+        } else {
+            $(".header_nav").removeClass("fixedheader shadow");
+        }
+    });
+}
+
+/*================================
+    Smooth Scroll
+==================================*/
+function ScrollTopFunction(){
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $("#scroll").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+}
 
 // Gallery Function
 function GalleryFunction(){
@@ -41,6 +71,8 @@ function HeroSliderOwlCarouselFunction(){
         autoplayHoverPause: true,
         autoplayTimeout: 5000,
         autoplaySpeed: 3000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
         navSpeed: 4000,
         dotsSpeed: 4000,
         dragEndSpeed: 1000,
