@@ -11,6 +11,8 @@
         - Features Services 
         - Tracking
         - Footer
+    + Subpage
+    + Contact Page
 	- Responsive Design 
 -------------------------------------------------------------------*/
 
@@ -123,7 +125,7 @@ p{
 /* Hero Slider 
 /*================================================== */
 div#hero_slider .item {
-    height: 450px;
+    height: 500px;
 }
 div#hero_slider .item img {
     width: 100%;
@@ -131,15 +133,15 @@ div#hero_slider .item img {
     object-fit: cover;
 }
 #hero_slider .owl-dots {
-    top: -50px;
+    top: -92px;
     position: relative;
-    display: table;
-    margin: auto;
+    text-align: right;
+    right: 23%;
 }
 .hero_slide_caption {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 75%;
+    top: 65%;
     text-align: center;
     transform: translate(-50%, -50%);
     z-index: 1111;
@@ -330,7 +332,7 @@ section.tracking_area {
 /*================================================== */
 .footer_area{
     padding: 80px 0;
-    background: #383838;
+    background: #111;
 }
 .footer_item.footer_logo img {
     margin-bottom: 20px;
@@ -358,12 +360,14 @@ section.tracking_area {
     margin-bottom: 7px;
     display: block;
     text-transform: capitalize;
+    font-weight: 300;
 }
 .footer_item ul li:last-child a {
     border: 0;
 }
 section.footer_bottom_area {
-    background: #F0F0F0;
+    background: #111;
+    border-top: 1px solid #222;
     text-align: center;
 }
 section.footer_bottom_area p {
@@ -392,4 +396,121 @@ ul.list-unstyled.footer_contacts li {
     display: block;
     overflow: hidden;
     font-size: 15px;
+}
+.footer_item ul li a i {
+    margin-right: 5px;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+/* Subpage 
+/*================================================== */
+.subpage_header{
+    background: url(../img/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    margin-bottom: 80px;
+}
+.subpage_header:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+.subpage_content {
+    display: table;
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    padding: 40px 0;
+    position: relative;
+    z-index: 11;
+}
+.subpage_content h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+}
+.subpage_content h2 p {
+    color: #fff;
+}
+.subpage_content p {
+    color: #fff;
+    letter-spacing: .4px;
+    margin: 0;
+}
+.separator_line {
+    height: 3px;
+    width: 113px;
+    background: #2691E4;
+    margin: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.subpage_header:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+.gallery_area{
+    margin-bottom: 80px;
+}
+.gallery_img_box {
+    height: 252px;
+    margin-bottom: 30px;
+}
+.gallery_img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_area .container {
+    max-width: 60%;
+}
+
+
+
+/* Contact Page 
+/*================================================== */
+.contact_area{
+    margin-bottom: 80px;
+}
+.contact_area .container {
+    max-width: 70%;
+}
+.contact_text_item h2 {
+    font-size: 22px;
+}
+.contact_text_item {
+    margin-bottom: 20px;
+}
+.contact_text p {
+    margin: 0;
+}
+button.btn.btn-default.submit_btn {
+    background: #2691E4;
+    color: #fff;
+}
+.map_container {
+    margin-top: 50px;
+    height: 400px;
+}
+.map_container iframe {
+    width: 100%;
+    height: 100%;
 }
